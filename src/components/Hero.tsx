@@ -83,7 +83,7 @@ export default function Hero() {
           >
             {/* Left — description */}
             <p className="font-sans text-base md:text-lg text-[#8C8680] max-w-sm leading-relaxed">
-              Skid steers. Mini excavators. Trailers.
+              Skid steer. Mini excavator.
               <br className="hidden md:block" />
               Delivery available. Most jobs set up same day.
             </p>
