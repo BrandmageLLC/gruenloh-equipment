@@ -1,42 +1,55 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const equipment = [
   {
     name: "Skid Steer",
     slug: "skid-steer-rental",
     specs: "~7,000 lb operating weight. Grading, clearing, loading, tight-space farm and site work.",
+    photo: "/images/skid-steer.jpg",
+    alt: "Skid steer loader available for rental in Jacksonville, Missouri",
     tag: "Most Requested",
   },
   {
     name: "Mini Excavator",
     slug: "mini-excavator-rental",
     specs: "3–6 ton class. Pond work, utility trenching, stump removal. Fits through a standard gate.",
+    photo: "/images/mini-excavator.jpg",
+    alt: "Mini excavator rental in Pike County, Missouri",
     tag: null,
   },
   {
     name: "Compact Track Loader",
     slug: "compact-track-loader-rental",
     specs: "Better traction in wet conditions. Preferred for muddy Missouri spring and fall work.",
+    photo: "/images/compact-track-loader.jpg",
+    alt: "Compact track loader rental Jacksonville MO",
     tag: null,
   },
   {
     name: "20ft Tilt Trailer",
     slug: "trailer-rental",
     specs: "Hauls skid steers, mini excavators, and heavy loads. Bumper pull, tilt deck.",
+    photo: "/images/trailer.jpg",
+    alt: "Equipment trailer rental in Pike County, Missouri",
     tag: null,
   },
   {
     name: "Brush Hog",
     slug: "brush-hog-rental",
     specs: "Tractor-mounted rough and finish mower. High demand for farm fields and overgrown lots.",
+    photo: "/images/brush-hog.jpg",
+    alt: "Brush hog and tractor rental in rural Missouri",
     tag: null,
   },
   {
     name: "Generator",
     slug: "generator-rental",
     specs: "6,000–12,000W. Job sites without power, storm backup, remote locations.",
+    photo: "/images/generator.jpg",
+    alt: "Construction generator rental Jacksonville Missouri",
     tag: null,
   },
 ];
@@ -103,16 +116,18 @@ export default function EquipmentGrid() {
               whileHover={{ scale: 1.012, transition: { duration: 0.2 } }}
               className="group bg-[#1A1917] relative overflow-hidden"
             >
-              {/* Image placeholder */}
-              <div className="aspect-[4/3] bg-[#141210] relative flex items-end justify-start overflow-hidden">
-                {/* Equipment name watermark */}
-                <span
-                  className="absolute inset-0 flex items-center justify-center font-display text-[11px] font-bold uppercase tracking-[0.3em] text-[#3A3632] select-none"
-                  aria-hidden="true"
-                >
-                  Photo Coming Soon
-                </span>
-                {/* Corner accent — appears on hover */}
+              {/* Equipment photo */}
+              <div className="aspect-[4/3] bg-[#141210] relative overflow-hidden">
+                <Image
+                  src={item.photo}
+                  alt={item.alt}
+                  fill
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.04]"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                {/* Dark overlay — lifts on hover */}
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/15 transition-colors duration-300" />
+                {/* Corner accent */}
                 <div className="absolute top-0 left-0 w-10 h-[2px] bg-[#E05C1A] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
                 <div className="absolute top-0 left-0 w-[2px] h-10 bg-[#E05C1A] scale-y-0 group-hover:scale-y-100 origin-top transition-transform duration-300" />
                 {/* Tag */}

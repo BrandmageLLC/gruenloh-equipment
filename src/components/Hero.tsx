@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -8,31 +9,27 @@ export default function Hero() {
       className="relative min-h-screen flex items-end bg-[#0F0E0D] overflow-hidden"
       aria-label="Hero"
     >
-      {/* Background — placeholder until real jobsite photo is provided */}
+      {/* Background photo */}
       <div className="absolute inset-0">
-        {/* CSS-based industrial texture pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(#E05C1A 1px, transparent 1px), linear-gradient(90deg, #E05C1A 1px, transparent 1px)",
-            backgroundSize: "80px 80px",
-          }}
+        <Image
+          src="/images/hero-bg.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+          aria-hidden="true"
         />
-        {/* Warm radial ambient — gives depth without a photo */}
+        {/* Dark overlay — preserves legibility while letting photo breathe */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 80% 60% at 75% 50%, rgba(32, 22, 12, 0.9) 0%, #0F0E0D 65%)",
+              "linear-gradient(to right, rgba(15,14,13,0.92) 0%, rgba(15,14,13,0.75) 50%, rgba(15,14,13,0.5) 100%)",
           }}
         />
-        {/* Real photo slot — swap src when client provides image */}
-        <div
-          className="absolute inset-0 bg-center bg-cover opacity-0"
-          style={{ backgroundImage: "url('/images/hero-jobsite.jpg')" }}
-          aria-hidden="true"
-        />
+        {/* Bottom fade to body bg */}
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#0F0E0D] to-transparent" />
       </div>
 
       {/* Left orange vertical accent line */}
