@@ -130,6 +130,7 @@ export default function EquipmentGrid() {
                   alt={item.alt}
                   fill
                   className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.04]"
+                  quality={100}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-black/25 group-hover:bg-black/10 transition-colors duration-300" />

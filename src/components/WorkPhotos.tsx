@@ -52,6 +52,7 @@ export default function WorkPhotos() {
               alt={photo.alt}
               fill
               className="object-cover object-center transition-transform duration-700 group-hover:scale-[1.04]"
+              quality={100}
               sizes="(max-width: 640px) 33vw, 33vw"
             />
             {/* Bottom caption */}

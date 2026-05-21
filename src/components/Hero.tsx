@@ -17,6 +17,7 @@ export default function Hero() {
           fill
           priority
           className="object-cover object-[center_40%]"
+          quality={100}
           sizes="100vw"
           aria-hidden="true"
         />
