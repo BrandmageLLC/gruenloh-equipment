@@ -13,7 +13,7 @@ const reasons = [
   {
     number: "02",
     title: "We answer.",
-    body: "Call us directly. If the phone rings, we pick up. Most rentals can be set up same day.",
+    body: "Call us directly. If the phone rings, we pick up. Available weekdays and weekends — most rentals can be set up same day.",
     photo: null,
   },
   {

@@ -8,7 +8,7 @@ const machines = [
     name: "Mini Excavator",
     slug: "mini-excavator-rental",
     specs:
-      "3–6 ton class. Pond work, utility trenching, stump removal, footings. Fits through a standard gate — goes where full-size can't.",
+      "John Deere. Pond work, utility trenching, stump removal, footings. Fits through a standard gate — goes where full-size can't.",
     photo: "/images/IMG_3457.jpg",
     alt: "John Deere mini excavator available for rental in Randolph County, Missouri",
     tag: null,

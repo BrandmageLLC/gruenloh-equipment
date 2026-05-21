@@ -90,7 +90,7 @@ export default function Hero() {
             <p className="font-sans text-base md:text-lg text-[#8C8680] max-w-sm leading-relaxed">
               Skid steer. Mini excavator.
               <br className="hidden md:block" />
-              Delivery available. Most jobs set up same day.
+              Delivery available. Available weekends. Most jobs same day.
             </p>
 
             {/* Right — CTA block */}

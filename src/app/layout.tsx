@@ -17,15 +17,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Equipment Rental Randolph & Macon County, MO | Gruenloh Equipment LLC",
+  title: "Skid Steer & Mini Excavator Rental | Moberly, MO",
   description:
-    "Rent skid steers, mini excavators, trailers, and more in Randolph and Macon County, MO. Gruenloh Equipment serves Moberly, Macon, and surrounding areas. Delivery available. Call (660) 676-8499.",
+    "Rent a skid steer with attachments or John Deere mini excavator in Randolph & Macon County, MO. Serving Moberly, Macon, and Huntsville. Available weekends. Call Gruenloh Equipment (660) 676-8499.",
   keywords:
-    "equipment rental Moberly MO, skid steer rental Randolph County Missouri, mini excavator rental Macon County MO, equipment rental Jacksonville MO, construction equipment rental north central Missouri, trailer rental Macon MO",
+    "mini excavator rental near me, skid steer rental near me, mini excavator rental Moberly MO, skid steer rental Moberly MO, equipment rental Macon MO, John Deere mini excavator rental Missouri, brush cutter skid steer rental Missouri, compact track loader rental near me, skid steer rental Randolph County Missouri, mini excavator rental Macon County MO, equipment rental Jacksonville MO, trenching rental north Missouri, land clearing equipment rental Moberly, grapple bucket rental Missouri",
   openGraph: {
-    title: "Equipment Rental Randolph & Macon County, MO | Gruenloh Equipment LLC",
+    title: "Skid Steer & Mini Excavator Rental | Moberly, MO | Gruenloh Equipment",
     description:
-      "Local equipment rental in Randolph and Macon County, Missouri. Skid steers, mini excavators, trailers. Call (660) 676-8499.",
+      "Skid steer with attachments + John Deere mini excavator rental in Randolph & Macon County, MO. Available weekends. Call (660) 676-8499.",
     type: "website",
     locale: "en_US",
   },
@@ -72,7 +72,7 @@ const jsonLd = {
   openingHours: "Mo-Su 07:00-19:00",
   priceRange: "$$",
   description:
-    "Gruenloh Equipment LLC offers construction and agricultural equipment rental in Jacksonville, MO and the surrounding Randolph and Macon County area. We rent skid steers, mini excavators, trailers, and more. Delivery available.",
+    "Gruenloh Equipment LLC rents a John Deere mini excavator and skid steer with attachments (brush cutter, forks, grapple, tooth bucket, smooth bucket) in Randolph and Macon County, MO. Serving Moberly, Macon, Huntsville, and surrounding areas. Available weekends. Delivery available.",
   geo: {
     "@type": "GeoCoordinates",
     latitude: 39.52,
