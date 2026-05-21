@@ -41,42 +41,19 @@ export default function ServiceArea() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
           >
-            {/* Map placeholder — swap for Google Maps embed when ready */}
-            <div
-              className="aspect-square bg-[#E0DAD2] relative overflow-hidden"
-              role="img"
-              aria-label="Service area map placeholder for Randolph and Macon County, Missouri"
-            >
-              {/* Grid texture */}
-              <div
-                className="absolute inset-0 opacity-[0.15]"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(#8C8680 1px, transparent 1px), linear-gradient(90deg, #8C8680 1px, transparent 1px)",
-                  backgroundSize: "48px 48px",
-                }}
-                aria-hidden="true"
+            {/* Google Maps embed — Jacksonville, Randolph County, MO */}
+            <div className="aspect-square relative overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98712.23!2d-92.4335!3d39.4186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c5f9a4d1b8e6b7%3A0x1a2b3c4d5e6f7a8b!2sJacksonville%2C%20MO%2065260!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0, filter: "grayscale(30%) contrast(1.1)" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Gruenloh Equipment service area — Jacksonville, Randolph County, Missouri"
+                className="absolute inset-0 w-full h-full"
               />
-              {/* Center pin */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-                <div className="w-14 h-14 border-2 border-[#E05C1A] flex items-center justify-center bg-white/60">
-                  <div className="w-3 h-3 bg-[#E05C1A]" />
-                </div>
-                <div className="text-center">
-                  <span className="font-display text-xs font-bold uppercase tracking-[0.3em] text-[#5A5550] block">
-                    Jacksonville, MO
-                  </span>
-                  <span className="font-sans text-[11px] text-[#8C8680] block mt-1">
-                    Randolph County
-                  </span>
-                </div>
-              </div>
-              {/* Radius rings */}
-              <div className="absolute inset-0 flex items-center justify-center" aria-hidden="true">
-                <div className="w-40 h-40 border border-[#E05C1A]/20 rounded-full" />
-                <div className="absolute w-64 h-64 border border-[#E05C1A]/10 rounded-full" />
-                <div className="absolute w-80 h-80 border border-[#E05C1A]/05 rounded-full" />
-              </div>
             </div>
             <p className="font-sans text-sm text-[#7A7470] mt-4 leading-relaxed">
               Delivery radius: approximately 40 miles from Jacksonville — covering Randolph, Macon, and surrounding counties.{" "}
