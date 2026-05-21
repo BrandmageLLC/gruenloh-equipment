@@ -12,11 +12,11 @@ export default function Hero() {
       {/* Background photo — shows through clearly at top, fades to dark at bottom */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-bg.jpg"
+          src="/images/IMG_0546.jpg"
           alt=""
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-[center_40%]"
           sizes="100vw"
           aria-hidden="true"
         />

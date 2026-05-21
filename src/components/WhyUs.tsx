@@ -1,22 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const reasons = [
   {
     number: "01",
     title: "Local.",
     body: "We're based in Jacksonville, not a regional call center. When you call, you're talking to someone who knows Randolph County.",
+    photo: null,
   },
   {
     number: "02",
     title: "We answer.",
     body: "Call us directly. If the phone rings, we pick up. Most rentals can be set up same day.",
+    photo: null,
   },
   {
     number: "03",
     title: "Delivery available.",
     body: "No trailer? We'll bring the machine to your site within our service area — call to confirm your address.",
+    photo: "/images/IMG_1042.jpg",
+    photoAlt: "Gruenloh Equipment delivering a skid steer on trailer to a job site in Randolph County, Missouri",
   },
 ];
 
@@ -28,6 +33,7 @@ export default function WhyUs() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-28 items-start">
+
           {/* Left — sticky heading */}
           <div className="lg:sticky lg:top-28 self-start">
             <motion.div
@@ -64,7 +70,7 @@ export default function WhyUs() {
                 key={r.number}
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{
                   duration: 0.45,
                   delay: i * 0.1,
@@ -76,18 +82,30 @@ export default function WhyUs() {
                   <span className="font-display font-bold text-sm text-[#E05C1A] tracking-widest mt-0.5 shrink-0 w-7">
                     {r.number}
                   </span>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="font-display font-bold text-2xl md:text-3xl uppercase tracking-wide text-[#E8E4DC] mb-2">
                       {r.title}
                     </h3>
                     <p className="font-sans text-[#6A6460] text-base leading-relaxed">
                       {r.body}
                     </p>
+                    {r.photo && (
+                      <div className="mt-5 aspect-[16/9] relative overflow-hidden">
+                        <Image
+                          src={r.photo}
+                          alt={r.photoAlt ?? ""}
+                          fill
+                          className="object-cover object-center"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
               </motion.div>
             ))}
           </div>
+
         </div>
       </div>
     </section>

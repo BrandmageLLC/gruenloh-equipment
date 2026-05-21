@@ -9,8 +9,8 @@ const machines = [
     slug: "mini-excavator-rental",
     specs:
       "3–6 ton class. Pond work, utility trenching, stump removal, footings. Fits through a standard gate — goes where full-size can't.",
-    photo: "/images/mini-excavator.jpg",
-    alt: "Mini excavator available for rental in Randolph County, Missouri",
+    photo: "/images/IMG_3457.jpg",
+    alt: "John Deere mini excavator available for rental in Randolph County, Missouri",
     tag: null,
   },
   {
@@ -18,8 +18,8 @@ const machines = [
     slug: "skid-steer-rental",
     specs:
       "Grading, clearing, loading, pushing, and tight-space site work. Five attachments available — see below for what's in the yard.",
-    photo: "/images/skid-steer.jpg",
-    alt: "Skid steer loader with multiple attachments available for rental in Macon County, Missouri",
+    photo: "/images/IMG_0545.jpg",
+    alt: "Skid steer loader with attachments available for rental in Randolph and Macon County, Missouri",
     tag: "5 Attachments Available",
   },
 ];
@@ -170,10 +170,26 @@ export default function EquipmentGrid() {
 
         {/* Attachments section */}
         <div className="bg-[#1A1917] border-t-0">
-          <div className="px-7 pt-6 pb-4 border-b border-[#2C2A27]">
-            <p className="font-display text-[11px] font-bold uppercase tracking-[0.3em] text-[#E05C1A]">
-              Skid Steer Attachments
-            </p>
+          {/* Attachments photo + label */}
+          <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] border-b border-[#2C2A27]">
+            <div className="relative h-40 md:h-full overflow-hidden">
+              <Image
+                src="/images/IMG_0544.jpg"
+                alt="All five skid steer attachments laid out — brush cutter, forks, grapple, tooth bucket, smooth bucket"
+                fill
+                className="object-cover object-center"
+                sizes="320px"
+              />
+              <div className="absolute inset-0 bg-black/30" />
+            </div>
+            <div className="px-7 py-5 flex flex-col justify-center">
+              <p className="font-display text-[11px] font-bold uppercase tracking-[0.3em] text-[#E05C1A] mb-1">
+                Skid Steer Attachments
+              </p>
+              <p className="font-sans text-sm text-[#5A5550]">
+                Five attachments in the yard — one machine, a lot of jobs.
+              </p>
+            </div>
           </div>
           <motion.div
             variants={attachmentVariants}
