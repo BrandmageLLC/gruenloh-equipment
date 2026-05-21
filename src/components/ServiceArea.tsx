@@ -44,7 +44,7 @@ export default function ServiceArea() {
             {/* Google Maps embed — Jacksonville, Randolph County, MO */}
             <div className="aspect-square relative overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98712.23!2d-92.4335!3d39.4186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c5f9a4d1b8e6b7%3A0x1a2b3c4d5e6f7a8b!2sJacksonville%2C%20MO%2065260!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                src="https://maps.google.com/maps?q=39.62,-92.42&z=9&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: "grayscale(30%) contrast(1.1)" }}

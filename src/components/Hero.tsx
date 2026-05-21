@@ -34,14 +34,19 @@ export default function Hero() {
       <div className="relative z-10 w-full px-6 sm:px-8 lg:px-14 pb-20 md:pb-28">
         <div className="max-w-7xl mx-auto">
 
-          {/* Top rule */}
+          {/* Top rule with business name inline */}
           <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            style={{ originX: 0 }}
-            className="w-full h-[1px] bg-white/20 mb-8"
-          />
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="flex items-center gap-4 mb-8"
+          >
+            <div className="w-8 h-[1px] bg-white/30 shrink-0" />
+            <span className="font-display text-[11px] font-bold uppercase tracking-[0.35em] text-white/50">
+              Gruenloh Equipment LLC
+            </span>
+            <div className="flex-1 h-[1px] bg-white/20" />
+          </motion.div>
 
           {/* H1 — full-width horizontal, not a tall stack */}
           <motion.h1
