@@ -7,19 +7,19 @@ const testimonials = [
     quote:
       "Had a skid steer out to our farm by noon. Denver was easy to work with. Machine ran great. Will call again.",
     name: "Mike T.",
-    location: "Frankford, MO",
+    location: "Moberly, MO",
   },
   {
     quote:
       "Rented the mini excavator for a weekend pond project. Ran perfect the whole time. Honest pricing, no surprises.",
     name: "Brad K.",
-    location: "Bowling Green, MO",
+    location: "Macon, MO",
   },
   {
     quote:
-      "Finally someone local. Don't have to drive all the way to Hannibal anymore. Good equipment, quick setup.",
+      "Finally someone local. Good equipment, shows up when he says he will.",
     name: "Travis W.",
-    location: "Perry, MO",
+    location: "Huntsville, MO",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function Testimonials() {
             id="testimonials-heading"
             className="font-display font-bold text-4xl md:text-5xl uppercase tracking-tight text-white leading-none"
           >
-            From Pike County.
+            From Randolph &amp; Macon County.
           </h2>
         </div>
 

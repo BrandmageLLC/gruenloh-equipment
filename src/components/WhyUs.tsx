@@ -6,7 +6,7 @@ const reasons = [
   {
     number: "01",
     title: "Local.",
-    body: "We're based in Jacksonville, not a regional call center. When you call, you're talking to someone who knows Pike County.",
+    body: "We're based in Jacksonville, not a regional call center. When you call, you're talking to someone who knows Randolph County.",
   },
   {
     number: "02",

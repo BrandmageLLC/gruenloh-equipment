@@ -16,7 +16,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-sans text-sm text-[#6A6460] leading-relaxed max-w-[200px]">
-              Equipment rental in Jacksonville, Missouri and surrounding Pike County.
+              Equipment rental in Jacksonville, Missouri. Serving Randolph &amp; Macon County.
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export default function Footer() {
                 ddgruenloh@yahoo.com
               </a>
               <span className="font-sans text-sm text-[#6A6460]">
-                Jacksonville, MO · Pike County
+                Jacksonville, MO · Randolph County
               </span>
             </address>
           </div>

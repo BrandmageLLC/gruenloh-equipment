@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 
 const towns = [
   "Jacksonville",
-  "Bowling Green",
-  "Louisiana",
-  "Hannibal",
-  "Perry",
-  "Clarksville",
-  "Frankford",
-  "Curryville",
-  "Vandalia",
-  "Eolia",
-  "Annada",
-  "New Hartford",
-  "Prairieville",
-  "Ashburn",
-  "Rockport",
-  "Paynesville",
-  "Elsberry",
-  "Winfield",
-  "Silex",
-  "Nix",
+  "Moberly",
+  "Macon",
+  "Huntsville",
+  "Higbee",
+  "Cairo",
+  "Renick",
+  "Bevier",
+  "Callao",
+  "Excello",
+  "Atlanta",
+  "Brashear",
+  "La Plata",
+  "Salisbury",
+  "Mexico",
+  "Clarence",
+  "Shelbina",
+  "Brookfield",
+  "Marceline",
+  "Kirksville",
 ];
 
 export default function ServiceArea() {
@@ -45,7 +45,7 @@ export default function ServiceArea() {
             <div
               className="aspect-square bg-[#E0DAD2] relative overflow-hidden"
               role="img"
-              aria-label="Service area map placeholder for Pike County, Missouri"
+              aria-label="Service area map placeholder for Randolph and Macon County, Missouri"
             >
               {/* Grid texture */}
               <div
@@ -67,7 +67,7 @@ export default function ServiceArea() {
                     Jacksonville, MO
                   </span>
                   <span className="font-sans text-[11px] text-[#8C8680] block mt-1">
-                    Pike County
+                    Randolph County
                   </span>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function ServiceArea() {
               </div>
             </div>
             <p className="font-sans text-sm text-[#7A7470] mt-4 leading-relaxed">
-              Delivery radius: approximately 40 miles from Jacksonville.{" "}
+              Delivery radius: approximately 40 miles from Jacksonville — covering Randolph, Macon, and surrounding counties.{" "}
               <a
                 href="tel:6606768499"
                 className="text-[#E05C1A] hover:underline"
@@ -113,11 +113,10 @@ export default function ServiceArea() {
             >
               We Deliver
               <br />
-              Across Pike County.
+              Across Randolph &amp; Macon County.
             </h2>
             <p className="font-sans text-base md:text-lg text-[#6A6460] leading-relaxed max-w-sm mb-10">
-              Based in Jacksonville. We regularly deliver to the towns below and
-              everywhere in between.
+              Based in Jacksonville. We regularly deliver to Moberly, Macon, and the towns below — and everywhere in between.
             </p>
 
             <ul

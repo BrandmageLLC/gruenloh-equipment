@@ -9,7 +9,7 @@ const equipment = [
     slug: "skid-steer-rental",
     specs: "~7,000 lb operating weight. Grading, clearing, loading, tight-space farm and site work.",
     photo: "/images/skid-steer.jpg",
-    alt: "Skid steer loader available for rental in Jacksonville, Missouri",
+    alt: "Skid steer loader available for rental in Randolph County, Missouri",
     tag: "Most Requested",
   },
   {
@@ -17,7 +17,7 @@ const equipment = [
     slug: "mini-excavator-rental",
     specs: "3–6 ton class. Pond work, utility trenching, stump removal. Fits through a standard gate.",
     photo: "/images/mini-excavator.jpg",
-    alt: "Mini excavator rental in Pike County, Missouri",
+    alt: "Mini excavator rental in Randolph and Macon County, Missouri",
     tag: null,
   },
   {
@@ -25,7 +25,7 @@ const equipment = [
     slug: "compact-track-loader-rental",
     specs: "Better traction in wet conditions. Preferred for muddy Missouri spring and fall work.",
     photo: "/images/compact-track-loader.jpg",
-    alt: "Compact track loader rental Jacksonville MO",
+    alt: "Compact track loader rental Moberly and Macon County MO",
     tag: null,
   },
   {
@@ -33,7 +33,7 @@ const equipment = [
     slug: "trailer-rental",
     specs: "Hauls skid steers, mini excavators, and heavy loads. Bumper pull, tilt deck.",
     photo: "/images/trailer.jpg",
-    alt: "Equipment trailer rental in Pike County, Missouri",
+    alt: "Equipment trailer rental in Randolph County, Missouri",
     tag: null,
   },
   {
@@ -49,7 +49,7 @@ const equipment = [
     slug: "generator-rental",
     specs: "6,000–12,000W. Job sites without power, storm backup, remote locations.",
     photo: "/images/generator.jpg",
-    alt: "Construction generator rental Jacksonville Missouri",
+    alt: "Construction generator rental Randolph and Macon County Missouri",
     tag: null,
   },
 ];

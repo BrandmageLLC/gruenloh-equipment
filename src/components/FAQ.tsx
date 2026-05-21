@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const faqs = [
   {
     q: "How far do you deliver?",
-    a: "Generally within 40 miles of Jacksonville — that covers most of Pike County and into the Hannibal and Bowling Green areas. Call us with your address and we'll give you a straight answer.",
+    a: "Generally within 40 miles of Jacksonville — that covers all of Randolph and Macon counties and into Moberly, Macon, Mexico, and beyond. Call us with your address and we'll give you a straight answer.",
   },
   {
     q: "Do I need a license to operate a skid steer or mini excavator?",
