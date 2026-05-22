@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Background photo — shows through clearly at top, fades to dark at bottom */}
       <div className="absolute inset-0">
         <Image
-          src="/images/IMG_0546.jpg"
+          src="/images/hero-equipment-rental-moberly-mo.jpg"
           alt=""
           fill
           priority

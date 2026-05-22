@@ -5,18 +5,18 @@ import Image from "next/image";
 
 const photos = [
   {
-    src: "/images/IMG_4923.jpg",
+    src: "/images/mini-excavator-foundation-trench-work-missouri.jpg",
     alt: "Mini excavator digging a foundation trench alongside a building in Randolph County, Missouri",
     caption: "Foundation work",
   },
   {
-    src: "/images/IMG_4928.jpg",
-    alt: "Deep trench excavation next to a metal building — mini excavator rental job site",
+    src: "/images/excavation-trench-north-central-missouri.jpg",
+    alt: "Deep trench excavation next to a metal building — mini excavator rental in north central Missouri",
     caption: "Utility trenching",
   },
   {
-    src: "/images/IMG_4937.jpg",
-    alt: "Mini excavator digging along a concrete foundation wall in Macon County, Missouri",
+    src: "/images/mini-excavator-stump-removal-randolph-county.jpg",
+    alt: "John Deere mini excavator doing stump removal in Randolph County, Missouri",
     caption: "Site prep",
   },
 ];

@@ -9,8 +9,8 @@ const machines = [
     slug: "mini-excavator-rental",
     specs:
       "John Deere. Pond work, utility trenching, stump removal, footings. Fits through a standard gate — goes where full-size can't.",
-    photo: "/images/IMG_3457.jpg",
-    alt: "John Deere mini excavator available for rental in Randolph County, Missouri",
+    photo: "/images/john-deere-mini-excavator-rental-macon-county-mo.jpg",
+    alt: "John Deere 50G mini excavator available for rental in Randolph and Macon County, Missouri",
     tag: null,
   },
   {
@@ -18,8 +18,8 @@ const machines = [
     slug: "skid-steer-rental",
     specs:
       "Grading, clearing, loading, pushing, and tight-space site work. Five attachments available — see below for what's in the yard.",
-    photo: "/images/IMG_0545.jpg",
-    alt: "Skid steer loader with attachments available for rental in Randolph and Macon County, Missouri",
+    photo: "/images/skid-steer-rental-randolph-county-mo.jpg",
+    alt: "John Deere compact track loader skid steer with attachments for rental in Randolph County, Missouri",
     tag: "5 Attachments Available",
   },
 ];
@@ -175,7 +175,7 @@ export default function EquipmentGrid() {
           <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] border-b border-[#2C2A27]">
             <div className="relative h-40 md:h-full overflow-hidden">
               <Image
-                src="/images/IMG_0544.jpg"
+                src="/images/skid-steer-attachments-brush-cutter-grapple-forks.jpg"
                 alt="All five skid steer attachments laid out — brush cutter, forks, grapple, tooth bucket, smooth bucket"
                 fill
                 className="object-cover object-center"

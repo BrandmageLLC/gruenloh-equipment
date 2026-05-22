@@ -20,7 +20,7 @@ const reasons = [
     number: "03",
     title: "Delivery available.",
     body: "No trailer? We'll bring the machine to your site within our service area — call to confirm your address.",
-    photo: "/images/IMG_1042.jpg",
+    photo: "/images/equipment-delivery-randolph-county-missouri.jpg",
     photoAlt: "Gruenloh Equipment delivering a skid steer on trailer to a job site in Randolph County, Missouri",
   },
 ];
