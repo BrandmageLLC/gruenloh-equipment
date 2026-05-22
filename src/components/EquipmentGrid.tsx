@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const machines = [
   {
@@ -151,19 +152,22 @@ export default function EquipmentGrid() {
                 <p className="font-sans text-sm text-[#7A7470] leading-relaxed mb-6">
                   {item.specs}
                 </p>
-                <a
-                  href="tel:6606768499"
-                  className="font-display text-[11px] font-bold uppercase tracking-[0.25em] text-[#F0A500] hover:text-[#E05C1A] inline-flex items-center gap-2 transition-colors duration-200 group/link"
-                  aria-label={`Call to rent ${item.name}`}
-                >
-                  Call to Rent
-                  <span
-                    className="inline-block transition-transform duration-200 group-hover/link:translate-x-1"
-                    aria-hidden="true"
+                <div className="flex items-center gap-5">
+                  <a
+                    href="tel:6606768499"
+                    className="font-display text-[11px] font-bold uppercase tracking-[0.25em] text-[#F0A500] hover:text-[#E05C1A] inline-flex items-center gap-2 transition-colors duration-200 group/link"
+                    aria-label={`Call to rent ${item.name}`}
                   >
-                    →
-                  </span>
-                </a>
+                    Call to Rent
+                    <span className="inline-block transition-transform duration-200 group-hover/link:translate-x-1" aria-hidden="true">→</span>
+                  </a>
+                  <Link
+                    href={`/equipment/${item.slug}`}
+                    className="font-display text-[11px] font-bold uppercase tracking-[0.25em] text-[#5A5550] hover:text-[#E8E4DC] transition-colors duration-200"
+                  >
+                    Details
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}
