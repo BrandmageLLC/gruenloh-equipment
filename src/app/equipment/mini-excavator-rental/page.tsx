@@ -3,12 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import StickyPhoneBar from "@/components/StickyPhoneBar";
 
 export const metadata: Metadata = {
   title: "John Deere Mini Excavator Rental | Randolph & Macon County, MO",
   description:
     "Rent a John Deere 50G mini excavator in Randolph and Macon County, Missouri. Pond work, trenching, stump removal, footings. Delivery available. Call Gruenloh Equipment (660) 676-8499.",
+  openGraph: {
+    title: "John Deere Mini Excavator Rental | Randolph & Macon County, MO",
+    description: "Rent a John Deere 50G mini excavator in Randolph and Macon County, MO. Delivery available. Call (660) 676-8499.",
+    type: "website",
+    url: "https://gruenlohequipment.com/equipment/mini-excavator-rental",
+    images: [{ url: "/images/john-deere-mini-excavator-rental-macon-county-mo.jpg" }],
+  },
   alternates: {
     canonical: "https://gruenlohequipment.com/equipment/mini-excavator-rental",
   },
@@ -218,7 +224,6 @@ export default function MiniExcavatorPage() {
 
       </main>
       <Footer />
-      <StickyPhoneBar />
     </>
   );
 }

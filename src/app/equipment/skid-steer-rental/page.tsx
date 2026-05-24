@@ -3,12 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import StickyPhoneBar from "@/components/StickyPhoneBar";
 
 export const metadata: Metadata = {
   title: "Skid Steer Rental with Attachments | Brush Cutter, Grapple, Forks | Moberly, MO",
   description:
     "Rent a John Deere compact track loader in Randolph & Macon County, MO. Five attachments available: brush cutter, forks, grapple, tooth bucket, smooth bucket. Delivery available. Call (660) 676-8499.",
+  openGraph: {
+    title: "Skid Steer Rental with Attachments | Brush Cutter, Grapple, Forks | Moberly, MO",
+    description: "John Deere skid steer with 5 attachments for rental in Randolph & Macon County, MO. Delivery available. Call (660) 676-8499.",
+    type: "website",
+    url: "https://gruenlohequipment.com/equipment/skid-steer-rental",
+    images: [{ url: "/images/skid-steer-rental-randolph-county-mo.jpg" }],
+  },
   alternates: {
     canonical: "https://gruenlohequipment.com/equipment/skid-steer-rental",
   },
@@ -262,7 +268,6 @@ export default function SkidSteerPage() {
 
       </main>
       <Footer />
-      <StickyPhoneBar />
     </>
   );
 }

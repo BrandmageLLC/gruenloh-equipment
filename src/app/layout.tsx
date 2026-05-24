@@ -17,6 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gruenlohequipment.com"),
   title: "Skid Steer & Mini Excavator Rental | Moberly, MO",
   description:
     "Rent a skid steer with attachments or John Deere mini excavator in Randolph & Macon County, MO. Serving Moberly, Macon, and Huntsville. Available weekends. Call Gruenloh Equipment (660) 676-8499.",
@@ -28,6 +29,22 @@ export const metadata: Metadata = {
       "Skid steer with attachments + John Deere mini excavator rental in Randolph & Macon County, MO. Available weekends. Call (660) 676-8499.",
     type: "website",
     locale: "en_US",
+    url: "https://gruenlohequipment.com",
+    siteName: "Gruenloh Equipment LLC",
+    images: [
+      {
+        url: "/images/hero-equipment-rental-moberly-mo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gruenloh Equipment LLC — Skid Steer & Mini Excavator Rental in Randolph County, Missouri",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Skid Steer & Mini Excavator Rental | Moberly, MO",
+    description: "John Deere equipment rental in Randolph & Macon County, MO. Available weekends. Call (660) 676-8499.",
+    images: ["/images/hero-equipment-rental-moberly-mo.jpg"],
   },
   alternates: {
     canonical: "https://gruenlohequipment.com",
@@ -38,6 +55,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Gruenloh Equipment LLC",
+  url: "https://gruenlohequipment.com",
   telephone: "+1-660-676-8499",
   email: "ddgruenloh@yahoo.com",
   address: {
