@@ -1,24 +1,24 @@
 import type { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://gruenlohequipment.com";
+const BASE_URL = "https://gruenlohequipment.com";
 
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: base,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      url: BASE_URL,
+      lastModified: new Date("2026-05-25"),
+      changeFrequency: "monthly",
       priority: 1.0,
     },
     {
-      url: `${base}/equipment/mini-excavator-rental`,
-      lastModified: new Date(),
+      url: `${BASE_URL}/equipment/mini-excavator-rental`,
+      lastModified: new Date("2026-05-25"),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${base}/equipment/skid-steer-rental`,
-      lastModified: new Date(),
+      url: `${BASE_URL}/equipment/skid-steer-rental`,
+      lastModified: new Date("2026-05-25"),
       changeFrequency: "monthly",
       priority: 0.9,
     },
