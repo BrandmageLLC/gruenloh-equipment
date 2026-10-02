@@ -13,8 +13,8 @@ const faqs = [
     a: "No CDL or special license required to rent or operate. That said, these machines deserve real respect. If you've never run one, ask when you call — we can walk you through the basics.",
   },
   {
-    q: "Can I rent by the day, weekend, or week?",
-    a: "Yes — daily, weekend, and weekly rates are all available. Weekend rate is typically Friday pickup through Monday morning. Call for current pricing.",
+    q: "What does it cost to rent?",
+    a: "Skid steers and the mini excavator are $400 a day. The tilt trailer is $100 a day with our equipment, or $150 a day on its own. Attachments: brush cutter $175, grapple $100, pallet forks $50 a day — buckets are included. Renting for more than a day? Ask when you call.",
   },
   {
     q: "What's your deposit and damage policy?",

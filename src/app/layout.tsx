@@ -90,7 +90,7 @@ const jsonLd = {
   openingHours: "Mo-Su 07:00-19:00",
   priceRange: "$$",
   description:
-    "Gruenloh Equipment LLC rents a John Deere mini excavator and skid steer with attachments (brush cutter, forks, grapple, tooth bucket, smooth bucket) in Randolph and Macon County, MO. Serving Moberly, Macon, Huntsville, and surrounding areas. Available weekends. Delivery available.",
+    "Gruenloh Equipment LLC rents a John Deere mini excavator, John Deere 317G and 331G skid steers with attachments (brush cutter, pallet forks, grapple, buckets), and a tilt deck equipment trailer in Randolph and Macon County, MO. Serving Moberly, Macon, Huntsville, and surrounding areas. Available weekends. Delivery available.",
   geo: {
     "@type": "GeoCoordinates",
     latitude: 39.52,

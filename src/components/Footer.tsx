@@ -52,10 +52,10 @@ export default function Footer() {
             <nav aria-label="Footer navigation">
               <ul className="flex flex-col gap-2.5">
                 {[
-                  { href: "#equipment", label: "Equipment" },
-                  { href: "#service-area", label: "Service Area" },
-                  { href: "#faq", label: "FAQ" },
-                  { href: "#contact", label: "Contact" },
+                  { href: "/#equipment", label: "Equipment" },
+                  { href: "/service-area", label: "Service Area" },
+                  { href: "/#faq", label: "FAQ" },
+                  { href: "/#contact", label: "Contact" },
                 ].map((link) => (
                   <li key={link.href}>
                     <a

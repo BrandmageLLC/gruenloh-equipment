@@ -5,74 +5,51 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Skid Steer Rental with Attachments | Brush Cutter, Grapple, Forks | Moberly, MO",
+  title: "Equipment Trailer Rental | Tilt Deck Trailer | Moberly, MO",
   description:
-    "Rent a John Deere 317G compact track loader in Randolph & Macon County, MO for $400/day. Brush cutter, pallet forks, and grapple available. Delivery available. Call (660) 676-8499.",
+    "Rent a Load Trail triple-axle tilt deck trailer in Randolph & Macon County, MO. $100/day with our equipment, $150/day on its own. Haul skid steers, mini excavators, and more. Call (660) 676-8499.",
   openGraph: {
-    title: "Skid Steer Rental with Attachments | Brush Cutter, Grapple, Forks | Moberly, MO",
-    description: "John Deere 317G skid steer rental, $400/day, in Randolph & Macon County, MO. Attachments available. Call (660) 676-8499.",
+    title: "Equipment Trailer Rental | Tilt Deck Trailer | Moberly, MO",
+    description: "Triple-axle tilt deck trailer rental in Randolph & Macon County, MO. $100/day with our equipment, $150/day on its own. Call (660) 676-8499.",
     type: "website",
-    url: "https://gruenlohequipment.com/equipment/skid-steer-rental",
-    images: [{ url: "/images/skid-steer-rental-randolph-county-mo.jpg" }],
+    url: "https://gruenlohequipment.com/equipment/trailer-rental",
+    images: [{ url: "/images/tilt-deck-equipment-trailer-rental-randolph-county-mo.jpg" }],
   },
   alternates: {
-    canonical: "https://gruenlohequipment.com/equipment/skid-steer-rental",
+    canonical: "https://gruenlohequipment.com/equipment/trailer-rental",
   },
 };
 
-const attachments = [
+const rates = [
   {
-    name: "Brush Cutter",
-    price: "$175 / day",
-    desc: "Clears heavy brush, overgrowth, saplings, and fence lines. Built for Missouri timber edges and rough fields.",
-    photo: "/images/skid-steer-attachments-brush-cutter-grapple-forks.jpg",
+    label: "With our equipment",
+    price: "$100",
+    detail: "Rent a skid steer or the mini excavator and haul it yourself.",
   },
   {
-    name: "Pallet Forks",
-    price: "$50 / day",
-    desc: "Pallet work, lumber, hay bales, heavy materials. Turns the CTL into a rough-terrain forklift.",
-    photo: null,
-  },
-  {
-    name: "Grapple",
-    price: "$100 / day",
-    desc: "Grabs brush, debris, logs, and demolition material. Works the clean-up jobs the bucket can't hold.",
-    photo: null,
-  },
-  {
-    name: "Tooth Bucket",
-    price: "Included with rental",
-    desc: "Hard digging, root removal, breaking through compacted ground, gravel work.",
-    photo: null,
-  },
-  {
-    name: "Smooth Bucket",
-    price: "Included with rental",
-    desc: "Finish grading, spreading gravel, backfilling, and site cleanup. Leaves a clean surface.",
-    photo: null,
+    label: "Trailer only",
+    price: "$150",
+    detail: "Move your own tractor, loader, vehicle, or materials.",
   },
 ];
 
 const jobTypes = [
-  { job: "Gravel driveway work", detail: "Spreading, grading, and pushing gravel on farm lanes and driveways." },
-  { job: "Brush & land clearing", detail: "Use the brush cutter to clear overgrown fields, fence lines, and timber edges." },
-  { job: "Loading & material handling", detail: "Moving dirt, gravel, mulch, and materials with the bucket or forks." },
-  { job: "Demolition cleanup", detail: "Grapple clears brush and debris after storm damage or demo work." },
-  { job: "Barn & farm site prep", detail: "Site clearing, grading, and pushing around outbuildings and tight spaces." },
-  { job: "Finish grading", detail: "Smooth bucket for final grading on yards, driveways, and building pads." },
+  { job: "Haul your rental", detail: "Pick up a skid steer or mini ex and run it to your own site on your schedule." },
+  { job: "Move your own equipment", detail: "Tractors, compact loaders, side-by-sides, and mowers." },
+  { job: "Vehicle transport", detail: "Tilt deck loads cars and trucks without hunting for ramps." },
+  { job: "Building materials", detail: "Lumber, posts, pallets, and fencing supplies to the job." },
 ];
 
 const specs = [
-  { label: "Rate", value: "$400 / day" },
-  { label: "Machine", value: "John Deere 317G Compact Track Loader" },
-  { label: "Drive", value: "Rubber tracks — better traction in mud" },
-  { label: "Attachments", value: "Buckets included — add-ons below" },
-  { label: "Common uses", value: "Grading, clearing, loading, pushing" },
-  { label: "Transport", value: "Delivery available — call to confirm" },
-  { label: "Availability", value: "Weekdays and weekends" },
+  { label: "Rate", value: "$100 / day with our equipment" },
+  { label: "Trailer only", value: "$150 / day" },
+  { label: "Trailer", value: "Load Trail tilt deck" },
+  { label: "Axles", value: "Triple axle" },
+  { label: "Loading", value: "Tilt deck — no ramps to set up" },
+  { label: "Towing", value: "Call to confirm your truck and hitch" },
 ];
 
-export default function SkidSteerPage() {
+export default function TrailerPage() {
   return (
     <>
       <Nav />
@@ -82,12 +59,12 @@ export default function SkidSteerPage() {
         <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-end overflow-hidden">
           <div className="absolute inset-0">
             <Image
-              src="/images/skid-steer-rental-randolph-county-mo.jpg"
-              alt="John Deere 317G compact track loader available for rental in Randolph County, Missouri"
+              src="/images/tilt-deck-equipment-trailer-rental-randolph-county-mo.jpg"
+              alt="Load Trail triple-axle tilt deck trailer available for rental in Randolph County, Missouri"
               fill
               priority
               quality={100}
-              className="object-cover object-center"
+              className="object-cover object-[center_60%]"
               sizes="100vw"
             />
             <div
@@ -105,20 +82,20 @@ export default function SkidSteerPage() {
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-[2px] bg-[#E05C1A]" />
               <span className="font-display text-[11px] font-bold uppercase tracking-[0.35em] text-[#E05C1A]">
-                Attachments Available · Randolph &amp; Macon County, MO
+                For Rent · Randolph &amp; Macon County, MO
               </span>
             </div>
             <h1
               className="font-display font-bold uppercase leading-[0.88] tracking-[-0.01em] text-white"
               style={{ fontSize: "clamp(40px, 7vw, 88px)" }}
             >
-              John Deere
+              Tilt Deck
               <br />
-              317G Skid Steer
+              Trailer
             </h1>
             <p className="font-display font-bold uppercase tracking-wide text-[#F0A500] mt-6">
-              <span className="text-3xl md:text-4xl">$400</span>{" "}
-              <span className="text-sm tracking-wider text-[#B8B2A8]">/ day</span>
+              <span className="text-3xl md:text-4xl">$100</span>{" "}
+              <span className="text-sm tracking-wider text-[#B8B2A8]">/ day with our equipment</span>
             </p>
           </div>
         </section>
@@ -132,18 +109,18 @@ export default function SkidSteerPage() {
               <div>
                 <div className="w-14 h-[3px] bg-[#E05C1A] mb-4" />
                 <p className="font-display text-[11px] font-bold uppercase tracking-[0.35em] text-[#E05C1A] mb-3">
-                  The Machine
+                  The Trailer
                 </p>
                 <h2 className="font-display font-bold text-3xl md:text-4xl uppercase tracking-tight text-[#1A1917] leading-none mb-6">
-                  One Machine.
+                  Haul It
                   <br />
-                  A Lot of Jobs.
+                  Yourself.
                 </h2>
                 <p className="font-sans text-[#5A5550] text-base md:text-lg leading-relaxed mb-6">
-                  This is a John Deere 317G compact track loader — rubber tracks for better traction on wet Missouri ground. $400 a day, buckets included. Add a brush cutter, pallet forks, or grapple depending on the job.
+                  A Load Trail triple-axle tilt deck. The deck tilts down to load, so there are no ramps to wrestle with. Drive the machine on, chain it down, and go.
                 </p>
                 <p className="font-sans text-[#5A5550] text-base leading-relaxed mb-8">
-                  Tell us what you need it for when you call and we&apos;ll make sure you have the right attachment. Delivery available within our service area.
+                  Renting one of our machines? The trailer is $100 a day. Need it on its own for your own equipment? $150 a day.
                 </p>
                 <a
                   href="tel:6606768499"
@@ -171,50 +148,47 @@ export default function SkidSteerPage() {
           </div>
         </section>
 
-        {/* Attachments */}
+        {/* Rates + photo */}
         <section className="bg-[#0F0E0D] py-20 md:py-28">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-14">
               <div className="w-14 h-[3px] bg-[#E05C1A] mb-4" />
               <p className="font-display text-[11px] font-bold uppercase tracking-[0.35em] text-[#E05C1A] mb-3">
-                What&apos;s in the Yard
+                Daily Rates
               </p>
-              <h2 className="font-display font-bold text-3xl md:text-4xl uppercase tracking-tight text-white leading-none mb-4">
-                Five Attachments.
+              <h2 className="font-display font-bold text-3xl md:text-4xl uppercase tracking-tight text-white leading-none">
+                Two Ways to Rent It.
               </h2>
-              <p className="font-sans text-[#6A6460] text-base max-w-md leading-relaxed">
-                Tooth and smooth buckets come with the machine. Brush cutter, forks, and grapple are priced by the day. Tell us the job and we&apos;ll load the right one.
-              </p>
             </div>
-
-            {/* Attachments photo */}
-            <div className="aspect-[16/6] relative overflow-hidden mb-8">
-              <Image
-                src="/images/skid-steer-attachments-brush-cutter-grapple-forks.jpg"
-                alt="All five skid steer attachments laid out — brush cutter, forks, grapple, tooth bucket, smooth bucket"
-                fill
-                quality={100}
-                className="object-cover object-center"
-                sizes="100vw"
-              />
-              <div className="absolute inset-0 bg-black/20" />
-            </div>
-
-            {/* Attachment cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-px bg-[#1A1917]">
-              {attachments.map((att) => (
-                <div key={att.name} className="bg-[#0F0E0D] p-6 border border-[#1A1917]">
-                  <h3 className="font-display font-bold text-sm uppercase tracking-wider text-[#E8E4DC] mb-3">
-                    {att.name}
-                  </h3>
-                  <p className="font-sans text-sm text-[#5A5550] leading-relaxed mb-4">
-                    {att.desc}
-                  </p>
-                  <p className="font-display text-sm font-bold uppercase tracking-wider text-[#F0A500]">
-                    {att.price}
-                  </p>
-                </div>
-              ))}
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-px bg-[#1A1917]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#1A1917]">
+                {rates.map((r) => (
+                  <div key={r.label} className="bg-[#0F0E0D] p-8 border border-[#1A1917] flex flex-col justify-between">
+                    <div>
+                      <h3 className="font-display font-bold text-sm uppercase tracking-wider text-[#E8E4DC] mb-3">
+                        {r.label}
+                      </h3>
+                      <p className="font-sans text-sm text-[#5A5550] leading-relaxed mb-8">
+                        {r.detail}
+                      </p>
+                    </div>
+                    <p className="font-display font-bold uppercase text-[#F0A500]">
+                      <span className="text-5xl">{r.price}</span>{" "}
+                      <span className="text-sm tracking-wider text-[#B8B2A8]">/ day</span>
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
+                <Image
+                  src="/images/tilt-trailer-rental-macon-county-mo.jpg"
+                  alt="Tilt deck trailer tilted down for loading equipment, available for rent in Macon County, Missouri"
+                  fill
+                  quality={100}
+                  className="object-cover object-[center_75%]"
+                  sizes="(max-width: 1024px) 100vw, 380px"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -228,10 +202,10 @@ export default function SkidSteerPage() {
                 What People Rent It For
               </p>
               <h2 className="font-display font-bold text-3xl md:text-4xl uppercase tracking-tight text-[#1A1917] leading-none">
-                Common Jobs.
+                Common Uses.
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#D8D2CA]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-[#D8D2CA]">
               {jobTypes.map((item) => (
                 <div key={item.job} className="bg-[#F5F0EB] p-7">
                   <h3 className="font-display font-bold text-base uppercase tracking-wide text-[#1A1917] mb-2">
@@ -254,10 +228,10 @@ export default function SkidSteerPage() {
                 <div className="w-14 h-[3px] bg-[#E05C1A] mb-4" />
                 <h2 className="font-display font-bold uppercase tracking-tight text-white leading-[0.9] mb-4"
                   style={{ fontSize: "clamp(32px, 5vw, 60px)" }}>
-                  Ready to rent<br />the skid steer?
+                  Need the<br />trailer?
                 </h2>
                 <p className="font-sans text-[#6A6460] text-base leading-relaxed max-w-sm">
-                  Tell us what attachment you need. Available weekdays and weekends.
+                  Call to check availability and confirm your truck can pull it.
                 </p>
               </div>
               <div className="flex flex-col gap-4 shrink-0">
@@ -268,10 +242,10 @@ export default function SkidSteerPage() {
                   (660) 676-8499
                 </a>
                 <Link
-                  href="/equipment/large-skid-steer-rental"
+                  href="/equipment/skid-steer-rental"
                   className="font-display font-bold text-sm uppercase tracking-wider text-[#6A6460] hover:text-[#E8E4DC] transition-colors inline-flex items-center gap-2 group"
                 >
-                  Need more machine? The 331G
+                  Also see: Skid Steers
                   <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
                 </Link>
                 <Link

@@ -13,15 +13,45 @@ const machines = [
     photo: "/images/john-deere-mini-excavator-rental-macon-county-mo.jpg",
     alt: "John Deere 50G mini excavator available for rental in Randolph and Macon County, Missouri",
     tag: null,
+    price: "$400",
+    unit: "/ day",
+    priceNote: null,
   },
   {
-    name: "Skid Steer",
+    name: "Skid Steer · 317G",
     slug: "skid-steer-rental",
     specs:
-      "Grading, clearing, loading, pushing, and tight-space site work. Five attachments available — see below for what's in the yard.",
+      "Grading, clearing, loading, pushing, and tight-space site work. Attachments available — see below for what's in the yard.",
     photo: "/images/skid-steer-rental-randolph-county-mo.jpg",
-    alt: "John Deere compact track loader skid steer with attachments for rental in Randolph County, Missouri",
-    tag: "5 Attachments Available",
+    alt: "John Deere 317G compact track loader skid steer for rental in Randolph County, Missouri",
+    tag: "Attachments Available",
+    price: "$400",
+    unit: "/ day",
+    priceNote: null,
+  },
+  {
+    name: "Skid Steer · 331G",
+    slug: "large-skid-steer-rental",
+    specs:
+      "The big one. More push, more lift, more weight on the ground for heavy dirt work, land clearing, and loading.",
+    photo: "/images/john-deere-331g-skid-steer-rental-randolph-county-mo.jpg",
+    alt: "John Deere 331G large-frame compact track loader for rental in Randolph County, Missouri",
+    tag: "Large Frame",
+    price: "$400",
+    unit: "/ day",
+    priceNote: null,
+  },
+  {
+    name: "Tilt Deck Trailer",
+    slug: "trailer-rental",
+    specs:
+      "Load Trail triple-axle tilt deck. Haul one of our machines yourself, or rent it on its own to move your own equipment.",
+    photo: "/images/tilt-deck-equipment-trailer-rental-randolph-county-mo.jpg",
+    alt: "Load Trail triple-axle tilt deck equipment trailer for rental in Randolph County, Missouri",
+    tag: null,
+    price: "$100",
+    unit: "/ day with our equipment",
+    priceNote: "$150 / day rented on its own",
   },
 ];
 
@@ -29,22 +59,27 @@ const attachments = [
   {
     name: "Brush Cutter",
     desc: "Heavy overgrowth, brush clearing, fence lines, and rough land.",
+    price: "$175 / day",
   },
   {
-    name: "Forks",
+    name: "Pallet Forks",
     desc: "Pallet work, material handling, moving lumber or heavy supplies.",
+    price: "$50 / day",
   },
   {
     name: "Grapple",
     desc: "Brush, debris, logs, and demo cleanup. Reaches where buckets can't hold.",
+    price: "$100 / day",
   },
   {
     name: "Tooth Bucket",
     desc: "Digging, breaking hard ground, gravel work, and root removal.",
+    price: "Included with rental",
   },
   {
     name: "Smooth Bucket",
     desc: "Finish grading, spreading dirt or gravel, site cleanup.",
+    price: "Included with rental",
   },
 ];
 
@@ -105,7 +140,7 @@ export default function EquipmentGrid() {
             The Fleet
           </h2>
           <p className="font-sans text-[#6A6460] mt-4 max-w-md text-base md:text-lg leading-relaxed">
-            Two machines, maintained and ready. Call to confirm availability — weekends book fast.
+            Three machines and a trailer, maintained and ready. Straight daily rates. Call to confirm availability — weekends book fast.
           </p>
         </div>
 
@@ -146,9 +181,20 @@ export default function EquipmentGrid() {
 
               {/* Content */}
               <div className="p-7 border-t border-[#2C2A27] group-hover:border-[#E05C1A] transition-colors duration-300">
-                <h3 className="font-display font-bold text-2xl uppercase tracking-wide text-[#E8E4DC] mb-3">
-                  {item.name}
-                </h3>
+                <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mb-3">
+                  <h3 className="font-display font-bold text-2xl uppercase tracking-wide text-[#E8E4DC]">
+                    {item.name}
+                  </h3>
+                  <p className="font-display font-bold uppercase tracking-wide text-[#F0A500]">
+                    <span className="text-2xl">{item.price}</span>{" "}
+                    <span className="text-xs tracking-wider text-[#B8B2A8]">{item.unit}</span>
+                  </p>
+                </div>
+                {item.priceNote && (
+                  <p className="font-display text-xs font-bold uppercase tracking-wider text-[#B8B2A8] mb-3">
+                    {item.priceNote}
+                  </p>
+                )}
                 <p className="font-sans text-sm text-[#7A7470] leading-relaxed mb-6">
                   {item.specs}
                 </p>
@@ -192,7 +238,7 @@ export default function EquipmentGrid() {
                 Skid Steer Attachments
               </p>
               <p className="font-sans text-sm text-[#5A5550]">
-                Five attachments in the yard — one machine, a lot of jobs.
+                Buckets come with the skid steer. Brush cutter, forks, and grapple rent by the day.
               </p>
             </div>
           </div>
@@ -212,8 +258,11 @@ export default function EquipmentGrid() {
                 <h4 className="font-display font-bold text-sm uppercase tracking-wider text-[#E8E4DC] mb-2 group-hover:text-[#F0A500] transition-colors duration-200">
                   {att.name}
                 </h4>
-                <p className="font-sans text-xs text-[#5A5550] leading-relaxed">
+                <p className="font-sans text-xs text-[#5A5550] leading-relaxed mb-3">
                   {att.desc}
+                </p>
+                <p className="font-display text-sm font-bold uppercase tracking-wider text-[#F0A500]">
+                  {att.price}
                 </p>
               </motion.div>
             ))}

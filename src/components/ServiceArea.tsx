@@ -129,6 +129,14 @@ export default function ServiceArea() {
                 we&apos;ll work it out.
               </p>
             </div>
+
+            <a
+              href="/service-area"
+              className="font-display text-[11px] font-bold uppercase tracking-[0.25em] text-[#1A1917] hover:text-[#E05C1A] inline-flex items-center gap-2 mt-6 transition-colors duration-200 group"
+            >
+              Full service area by county
+              <span className="inline-block transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">→</span>
+            </a>
           </motion.div>
         </div>
       </div>

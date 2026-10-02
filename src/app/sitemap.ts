@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: BASE_URL,
-      lastModified: new Date("2026-05-25"),
+      lastModified: new Date("2026-10-02"),
       changeFrequency: "monthly",
       priority: 1.0,
     },
@@ -21,6 +21,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date("2026-05-25"),
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/equipment/large-skid-steer-rental`,
+      lastModified: new Date("2026-10-02"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/equipment/trailer-rental`,
+      lastModified: new Date("2026-10-02"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/service-area`,
+      lastModified: new Date("2026-10-02"),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
   ];
 }

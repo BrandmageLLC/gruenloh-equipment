@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "#equipment", label: "Equipment" },
-  { href: "#service-area", label: "Service Area" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#equipment", label: "Equipment" },
+  { href: "/#service-area", label: "Service Area" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Nav() {

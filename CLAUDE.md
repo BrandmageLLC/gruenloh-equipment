@@ -1,6 +1,6 @@
 # Gruenloh Equipment LLC — Website
 
-A local equipment rental marketing website for Gruenloh Equipment LLC, Jacksonville, MO.
+A local equipment rental marketing website for Gruenloh Equipment LLC, Jacksonville, MO (Randolph County).
 Goal: generate phone calls and establish Google presence for a business currently not on Google Maps.
 
 ## Project
@@ -9,8 +9,8 @@ Goal: generate phone calls and establish Google presence for a business currentl
 - **Owner:** Denver Gruenloh
 - **Phone:** (660) 676-8499
 - **Email:** ddgruenloh@yahoo.com
-- **Location:** Jacksonville, MO (Pike County)
-- **Service area:** ~40 mile radius — Pike County, Bowling Green, Louisiana MO, Hannibal, Perry, Clarksville
+- **Location:** Jacksonville, MO (Randolph County)
+- **Service area:** ~40 mile radius — Randolph & Macon County, Moberly, Macon, Huntsville, plus Shelby, Chariton, Linn, Adair, Audrain (see /service-area)
 - **GitHub:** https://github.com/BrandmageLLC/gruenloh-equipment
 
 ## Tech Stack
@@ -115,6 +115,6 @@ Until client provides real photos:
 ## SEO Priority
 
 1. Homepage: "equipment rental Jacksonville MO"
-2. Each equipment page: specific keyword + Pike County/MO location
+2. Each equipment page: specific keyword + Randolph/Macon County MO location
 3. Service area page: lists all towns in coverage radius
 4. LocalBusiness schema with areaServed array of 20+ towns

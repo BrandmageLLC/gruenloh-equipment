@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "John Deere Mini Excavator Rental | Randolph & Macon County, MO",
   description:
-    "Rent a John Deere 50G mini excavator in Randolph and Macon County, Missouri. Pond work, trenching, stump removal, footings. Delivery available. Call Gruenloh Equipment (660) 676-8499.",
+    "Rent a John Deere 50G mini excavator in Randolph and Macon County, Missouri — $400/day. Pond work, trenching, stump removal, footings. Delivery available. Call Gruenloh Equipment (660) 676-8499.",
   openGraph: {
     title: "John Deere Mini Excavator Rental | Randolph & Macon County, MO",
     description: "Rent a John Deere 50G mini excavator in Randolph and Macon County, MO. Delivery available. Call (660) 676-8499.",
@@ -30,6 +30,7 @@ const jobTypes = [
 ];
 
 const specs = [
+  { label: "Rate", value: "$400 / day" },
   { label: "Machine", value: "John Deere 50G" },
   { label: "Class", value: "5-ton compact excavator" },
   { label: "Dig depth", value: "~11 ft" },
@@ -82,6 +83,10 @@ export default function MiniExcavatorPage() {
               <br />
               Mini Excavator
             </h1>
+            <p className="font-display font-bold uppercase tracking-wide text-[#F0A500] mt-6">
+              <span className="text-3xl md:text-4xl">$400</span>{" "}
+              <span className="text-sm tracking-wider text-[#B8B2A8]">/ day</span>
+            </p>
           </div>
         </section>
 
@@ -102,7 +107,7 @@ export default function MiniExcavatorPage() {
                   Compact. Capable.
                 </h2>
                 <p className="font-sans text-[#5A5550] text-base md:text-lg leading-relaxed mb-6">
-                  The 50G is a 5-ton machine that digs deep and fits through tight spots. It goes where full-size excavators can't — through farm gates, next to buildings, in landscaped yards. One of the most versatile rentals we offer.
+                  The 50G is a 5-ton machine that digs deep and fits through tight spots. It goes where full-size excavators can&apos;t — through farm gates, next to buildings, in landscaped yards. One of the most versatile rentals we offer.
                 </p>
                 <p className="font-sans text-[#5A5550] text-base leading-relaxed mb-8">
                   Delivery available within our service area. Call to confirm availability and your address before you need it — this machine books up.
@@ -215,6 +220,13 @@ export default function MiniExcavatorPage() {
                   className="font-display font-bold text-sm uppercase tracking-wider text-[#6A6460] hover:text-[#E8E4DC] transition-colors inline-flex items-center gap-2 group"
                 >
                   Also see: Skid Steer
+                  <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
+                </Link>
+                <Link
+                  href="/equipment/trailer-rental"
+                  className="font-display font-bold text-sm uppercase tracking-wider text-[#6A6460] hover:text-[#E8E4DC] transition-colors inline-flex items-center gap-2 group"
+                >
+                  Haul it yourself: Trailer $100/day
                   <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">→</span>
                 </Link>
               </div>
